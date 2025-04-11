@@ -295,7 +295,15 @@ button {
   .nav-link.current {
     color: #404bbf;
   }
+  /* appear menu ! */
+  .nav-list {
+    display: none;
+  }
 
+  .contacts {
+    display: none;
+  }
+  /* !/--- */
   .social-div-people-team {
     display: flex;
     justify-content: center;
