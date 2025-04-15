@@ -90,7 +90,7 @@
                 </li>
               </ul>
             </address>
-            <ul class="social-div-people-team">
+            <ul class="social-div-people-team-mobile">
               <li class="social-item-div-people-team">
                 <a class="social-link-people-team" href=""
                   ><svg
@@ -144,7 +144,7 @@
         </div>
       </section>
 
-      <!-- <section class="wrapper">
+      <section class="wrapper">
         <div class="container">
           <h2 class="title-benefits visually-hidden">Benefits</h2>
           <ul class="list-benefits">
@@ -201,11 +201,19 @@
       </section>
 
       <section class="our-team-container">
-        <div class="container">
+        <div class="container mobile-container">
           <h2 class="title-our-team">Our Team</h2>
           <ul class="list-our-team-list">
             <li class="list-team-our">
-              <img src="./images/img-1.jpg" alt="man-team-1" width="264" />
+              <img
+                srcset="
+                  ./images/team/img-min.jpg    1x,
+                  ./images/team/img@2x-min.jpg 2x
+                "
+                src="./images/img-1.jpg"
+                alt="man-team-1"
+                width="264"
+              />
               <div class="div-title-descr-people-team">
                 <h3 class="people-team-title">Mark Guerrero</h3>
                 <p class="people-team-title-descr">Product Designer</p>
@@ -263,7 +271,15 @@
             </li>
 
             <li class="list-team-our">
-              <img src="./images/img-2.jpg" alt="man-team-2" width="264" />
+              <img
+                srcset="
+                  ./images/team/man-team-2-min.jpg    1x,
+                  ./images/team/man-team-2@2x-min.jpg 2x
+                "
+                src="./images/img-2.jpg"
+                alt="man-team-2"
+                width="264"
+              />
               <div class="div-title-descr-people-team">
                 <h3 class="people-team-title">Tom Ford</h3>
                 <p class="people-team-title-descr">Frontend Developer</p>
@@ -320,7 +336,15 @@
               </div>
             </li>
             <li class="list-team-our">
-              <img src="./images/img-3.jpg" alt="man-team-3" width="264" />
+              <img
+                srcset="
+                  ./images/team/man-team-3-min.jpg      1x,
+                  ./images/team/man-team-3@2x-2-min.jpg 2x
+                "
+                src="./images/img-3.jpg"
+                alt="man-team-3"
+                width="264"
+              />
               <div class="div-title-descr-people-team">
                 <h3 class="people-team-title">Camila Garcia</h3>
                 <p class="people-team-title-descr">Marketing</p>
@@ -377,7 +401,15 @@
               </div>
             </li>
             <li class="list-team-our">
-              <img src="./images/img-4.jpg" alt="man-team-4" width="264" />
+              <img
+                srcset="
+                  ./images/team/man-team-4-min.jpg    1x,
+                  ./images/team/man-team-4@2x-min.jpg 2x
+                "
+                src="./images/img-4.jpg"
+                alt="man-team-4"
+                width="264"
+              />
               <div class="div-title-descr-people-team">
                 <h3 class="people-team-title">Daniel Wilson</h3>
                 <p class="people-team-title-descr">UI Designer</p>
@@ -436,7 +468,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-portfolio-container">
+      <!-- <section class="our-portfolio-container">
         <div class="container">
           <h2 class="main-title-our-portfolio">Our Portfolio</h2>
           <ul class="list-our-portfolio">
