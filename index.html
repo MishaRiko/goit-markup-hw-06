@@ -49,15 +49,15 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger_menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="mobile-menu-container container">
-          <button class="mobile-menu-close" type="button">
+          <button class="mobile-menu-close" type="button" data-menu-close>
             <svg class="modal-close" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
@@ -65,25 +65,27 @@
           <nav class="mobile-menu-nav">
             <ul class="nav-list-mobile">
               <li class="nav-item">
-                <a class="nav-link current" href="./index.html">Studio</a>
+                <a class="nav-link current-mobile" href="./index.html"
+                  >Studio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Portfolio</a>
+                <a class="nav-link non-current-mobile" href="">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href=""> Contacts</a>
+                <a class="nav-link non-current-mobile" href=""> Contacts</a>
               </li>
             </ul>
           </nav>
           <div class="adress_soc-mobile">
             <address class="contacts-mobile">
-              <ul class="contacts-list">
+              <ul class="contacts-list mobile-contacts-list">
                 <li class="contacts-item-mobile">
                   <a class="contacts-link" href="mailto:info@devstudio.com"
                     >info@devstudio.com
                   </a>
                 </li>
-                <li class="contacts-item">
+                <li class="contacts-item-mobile">
                   <a class="contacts-link" href="tel:+110001111111"
                     >+11 (000) 111-11-11</a
                   >
@@ -95,8 +97,8 @@
                 <a class="social-link-people-team" href=""
                   ><svg
                     class="social-icon-svg-people-team"
-                    width="16"
-                    height="16"
+                    width="24"
+                    height="24"
                   >
                     <use href="./images/icons.svg#icon-instagram-2"></use></svg
                 ></a>
@@ -105,8 +107,8 @@
                 <a class="social-link-people-team" href=""
                   ><svg
                     class="social-icon-svg-people-team"
-                    width="16"
-                    height="16"
+                    width="24"
+                    height="24"
                   >
                     <use href="./images/icons.svg#icon-twitter-1"></use></svg
                 ></a>
@@ -115,8 +117,8 @@
                 <a class="social-link-people-team" href=""
                   ><svg
                     class="social-icon-svg-people-team"
-                    width="16"
-                    height="16"
+                    width="24"
+                    height="24"
                   >
                     <use href="./images/icons.svg#icon-facebook-1"></use></svg
                 ></a>
@@ -125,8 +127,8 @@
                 <a class="social-link-people-team" href=""
                   ><svg
                     class="social-icon-svg-people-team"
-                    width="16"
-                    height="16"
+                    width="24"
+                    height="24"
                   >
                     <use href="./images/icons.svg#icon-linkedin-1"></use></svg
                 ></a>
@@ -140,7 +142,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -781,9 +785,9 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
-        <button class="modal-button-close" type="button">
+        <button class="modal-button-close" type="button" data-modal-close>
           <svg class="modal-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -853,5 +857,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

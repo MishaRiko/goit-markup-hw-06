@@ -52,14 +52,12 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 16px 0 16px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    margin: 0 auto;
     padding: 0 15px 0 15px;
   }
 }
@@ -165,6 +163,8 @@ button {
     display: block;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 24px 0;
   }
   .nav-link:hover,
   .nav-link:focus,
@@ -292,9 +292,32 @@ button {
   .nav-item:last-child {
     margin-bottom: 0;
   }
-  .nav-link.current {
+  .nav-link.current-mobile {
     color: #404bbf;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
   }
+  .non-current-mobile {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+  }
+  .mobile-contacts-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  .contacts-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
   /* appear menu ! */
   .nav-list {
     display: none;
@@ -348,7 +371,10 @@ button {
   background-color: #2e2f42;
   padding-top: 72px;
   padding-bottom: 72px;
-  background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office-mobile-1x.jpg);
   max-width: 320px;
   background-repeat: no-repeat;
@@ -388,7 +414,10 @@ button {
 @media (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px) {
   .hero {
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/people-office-mobile-2x.jpg);
   }
 }
@@ -398,13 +427,11 @@ button {
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 768px;
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/people-office-tablet-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
   }
   .hero-title {
     font-weight: 700;
@@ -443,7 +470,10 @@ button {
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
   (min-resolution: 192dpi) and (min-width: 768px) {
   .hero {
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/people-office-tablet@2x.jpg);
   }
 }
@@ -453,11 +483,6 @@ button {
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
   }
   .hero-button {
     margin: auto;
@@ -490,7 +515,7 @@ button {
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .subtitle-benefits {
     text-align: center;
   }
@@ -523,6 +548,7 @@ button {
   }
   .punkt-list-benefits {
     width: calc((100% - 24px) / 2);
+    margin: 0;
   }
   .pic-punkt-list-benefits {
     display: none;
@@ -532,6 +558,7 @@ button {
 @media screen and (min-width: 1158px) {
   .punkt-list-benefits {
     width: calc((100% - 72px) / 4);
+    margin: 0;
   }
 
   .pic-punkt-list-benefits {
@@ -903,6 +930,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     row-gap: 72px;
+    justify-content: center;
   }
   .text-footer {
     max-width: none;
@@ -911,6 +939,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     row-gap: 16px;
+    justify-content: center;
   }
 
   .p-social-footer {
@@ -953,6 +982,9 @@ button {
 
   .page-footer {
     padding: 100px 0;
+  }
+  .footer-one {
+    gap: 0;
   }
 }
 
@@ -1114,7 +1146,7 @@ button {
   margin-bottom: 24px;
 }
 
-.input-checkbox:checked + .label-checkbox span {
+.input-checkbox:checked + .label-checkbox .style-privacy-policy-check {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
