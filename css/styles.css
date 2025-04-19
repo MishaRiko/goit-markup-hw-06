@@ -317,7 +317,12 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
-
+  .link-mob-numb {
+    color: #4d5ae5;
+  }
+  .link-mob-email {
+    color: #434455;
+  }
   /* appear menu ! */
   .nav-list {
     display: none;
@@ -493,7 +498,10 @@ button {
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px),
   (min-resolution: 192dpi) and (min-width: 1158px) {
   .hero {
-    background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/people-office-decktop@2x.jpg);
   }
 }
@@ -1206,6 +1214,10 @@ button {
 .label-checkbox {
   display: flex;
   align-items: center;
+}
+.span-text-and-privacy p,
+.span-text-and-privacy a {
+  color: #000;
 }
 @media screen and (max-width: 767px) {
   .modal {
